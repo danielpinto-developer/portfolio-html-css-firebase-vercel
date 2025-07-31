@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4856dd579c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" alt="Logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Applied AI & Full Stack Engineer</p>
+          <h1>Hi, I'm <span>Daniel Pinto</span><br />From Chicago</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/smile.png" alt="Smile" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm a self-taught full stack and AI developer with a strong
+              foundation in automation, data engineering, and conversational AI.
+              I’ve built production tools that power real businesses — from ML
+              chatbots and inventory systems to lead-gen dashboards and internal
+              AI assistants. My journey started in logistics, where I automated
+              warehouse ops using Python — and I’ve been leveling up ever since.
+              Now I’m focused on joining a forward-thinking remote team where I
+              can keep delivering results through applied AI and full stack
+              innovation
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Artificial Intelligence</span><br />
+                  Conversational AI (BETO, spaCy, GPT-4o), Intent Systems, Agent
+                  Design
+                </li>
+                <li>
+                  <span>Machine Learning</span><br />
+                  TensorFlow, MobileNetV2, Custom CNNs, Recommenders, Hugging
+                  Face
+                </li>
+                <li>
+                  <span>Backend & Automation</span><br />
+                  Python, Firebase Functions, API Design, SEO Scripts, Workflow
+                  Automation
+                </li>
+                <li>
+                  <span>Frontend & Web Systems</span><br />
+                  React, Flask, WordPress, Bubble.io, TailwindCSS, Vercel
+                </li>
+                <li>
+                  <span>Data & Infra</span><br />
+                  Pandas, Google Sheets, Google Cloud, GitHub, OCR (Google
+                  Vision), Maps API
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2025 - Now</span><br />Applied AI & Full Stack Engineer
+                  - BB27 Studio Beauty Salon
+                </li>
+                <li>
+                  <span>2021 - 2025</span><br />Junior Full Stack Developer &
+                  Automation Specialist - iHotweb
+                </li>
+                <li>
+                  <span>2019 - 2021</span><br />Logistics Manager → Data &
+                  Automation Analyst - CHC Distro
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2025</span><br />Machine Learning A-Z - SuperDataScience
+                </li>
+                <li>
+                  <span>2025</span><br />Deep Learning A-Z - SuperDataScience
+                </li>
+                <li>
+                  <span>2024</span><br />Back-End Dev Certificate -
+                  CourseCareers
+                </li>
+                <li>
+                  <span>2021</span><br />PCEP Python Developer Certificate -
+                  OpenEDG
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>AI Insights Generator</h3>
+              <p>Education data + NLP = Instant insights.</p>
+              <a href="https://github.com/danielpinto-developer/ai-insights"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>SmartCabello AI</h3>
+              <p>Estimate hair length & pricing instantly with AI.</p>
+              <a href="https://www.bb27studio.com/smartcabello_ai.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Crypto Dashboard</h3>
+              <p>Cumulative Return + top 5 likely dips (real API).</p>
+              <a
+                href="https://github.com/danielpinto-developer/bitcoin-analysis"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-4.png" />
+            <div class="layer">
+              <h3>Beauty Salon Dashboard</h3>
+              <p>
+                Built a fully functional admin dashboard for a start up company.
+              </p>
+              <a href="https://github.com/danielpinto-developer/ai-insights"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-5.png" />
+            <div class="layer">
+              <h3>Auto Insurance Lead Gen</h3>
+              <p>
+                Custom insurance funnel developed with React & Tailwind for a
+                private client.
+              </p>
+              <a href="https://www.bb27studio.com/smartcabello_ai.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-6.png" />
+            <div class="layer">
+              <h3>Beauty Bot</h3>
+              <p>Designed a business chatbot for Whatsapp.</p>
+              <a
+                href="https://github.com/danielpinto-developer/bitcoin-analysis"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/danielpinto-developer" class="btn"
+          >See more</a
+        >
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title" style="padding-top: 40px">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              danielpinto.developer@gmail.com
+            </p>
+            <p><i class="fas fa-phone-square-alt"></i> (714) 909-3322</p>
+            <a
+              href="https://www.linkedin.com/in/danielpinto2024"
+              class="social-btn"
+            >
+              <img
+                src="images/profile.png"
+                alt="LinkedIn Icon"
+                class="button-image"
+              />
+            </a>
+          </div>
+          <div class="contact-right">
+            <form id="contact-form">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu + Tabs JS -->
+    <script>
+      function opentab(tabname) {
+        const tablinks = document.querySelectorAll(".tab-links");
+        const tabcontents = document.querySelectorAll(".tab-contents");
+        tablinks.forEach((tab) => tab.classList.remove("active-link"));
+        tabcontents.forEach((tab) => tab.classList.remove("active-tab"));
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      function openmenu() {
+        document.getElementById("sidemenu").style.right = "0";
+      }
+      function closemenu() {
+        document.getElementById("sidemenu").style.right = "-200px";
+      }
+    </script>
+
+    <!-- Firebase Contact Form -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
+      import {
+        getFirestore,
+        collection,
+        addDoc,
+        serverTimestamp,
+      } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCvxaIozAfz6Q-5pfbT9FIyMVowwGML3OA",
+        authDomain: "personal-portfolio-ca697.firebaseapp.com",
+        projectId: "personal-portfolio-ca697",
+        storageBucket: "personal-portfolio-ca697.appspot.com",
+        messagingSenderId: "475062216373",
+        appId: "1:475062216373:web:103902cc8d0689c62180fc",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+
+      const form = document.getElementById("contact-form");
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        try {
+          await addDoc(collection(db, "messages"), {
+            name: data.name,
+            email: data.email,
+            message: data.message,
+            timestamp: serverTimestamp(),
+          });
+
+          msg.textContent = "✅ Message sent successfully!";
+          msg.style.color = "green";
+          form.reset();
+        } catch (error) {
+          console.error("Firestore Error:", error);
+          msg.textContent = "❌ Failed to send message.";
+          msg.style.color = "red";
+        }
+      });
+    </script>
+  </body>
+</html>
